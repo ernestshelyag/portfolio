@@ -1,0 +1,27 @@
+// media queries
+
+$breakpointNote: 'only screen and (max-width: 1279px)'
+$breakpointTablet: 'only screen and (max-width: 1023px)'
+$breakpointMobile: 'only screen and (max-width: 767px)'
+
+=r_note
+    @media #{$breakpointNote}
+        @content
+=r_tablet
+    @media #{$breakpointTablet}
+        @content
+=r_mobile
+    @media #{$breakpointMobile}
+        @content
+
+=r($width)
+    @media only screen and (max-width: $width+px)
+        @content
+
+=rmin($width)
+    @media only screen and (min-width: $width+px)
+        @content
+
+=rh($width)
+    @media only screen and (max-height: $width+px)
+        @content

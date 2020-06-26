@@ -1,0 +1,15 @@
+=font-face($font-family, $file-path, $weight: normal, $style: normal)
+    @font-face
+        font-family: $font-family
+        src: url('#{$file-path}.woff') format('woff'),  url('#{$file-path}.ttf') format('truetype')
+        font-weight: $weight
+        font-style: $style
+
++font-face('Gotham', '~@/assets/fonts/GothamProLight', 300)
++font-face('Gotham', '~@/assets/fonts/GothamProRegular', 400)
+
+=main-font
+    font-family: 'Gotham', Helvetica, Arial, sans-serif
+
+=secondary-font
+    font-family: 'Michroma', sans-serif
